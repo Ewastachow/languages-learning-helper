@@ -127,15 +127,15 @@ Aplikacja, którą zamierzamy stworzyć będzie służyć do szybkiego przyswaja
  * [X] [TESTY] Przygotowanie środowiska testerskiego (osobna baza)
  * [X] [TESTY] Podstawowe testy zrealizowanych funcjonalności (*happy paths*)
 ### Milestone 4
- * [ ] [BACKEND] Edycja zestawu fiszek
- * [ ] [FRONTEND] Formularz edycji zestawu fiszek
- * [ ] [BACKEND] Usuwanie zestawu fiszek
- * [ ] [FRONTEND] Przycisk do usuwanie zestawu fiszek
- * [ ] [BACKEND] Obsługa synchronizacji zestawów edytowanych w tym samym czasie, implementacja Optimistic Offline Lock
- * [ ] [FRONTEND] Odpowiednie komunikaty w celu informacji użytkownika o braku możliwości zapisu zmian, gdy niezgodność wersji
- * [ ]  [FRONTEND] Możliwość korzystania z aplikacji offline
- * [ ]  [TESTY] Przetestowanie aplikacji - testy integracyjne
- * [ ]  Kompletna dokumentacja
+ * [x] [BACKEND] Edycja zestawu fiszek
+ * [x] [FRONTEND] Formularz edycji zestawu fiszek
+ * [x] [BACKEND] Usuwanie zestawu fiszek
+ * [x] [FRONTEND] Przycisk do usuwanie zestawu fiszek
+ * [x] [BACKEND] Obsługa synchronizacji zestawów edytowanych w tym samym czasie, implementacja Optimistic Offline Lock
+ * [x] [FRONTEND] Odpowiednie komunikaty w celu informacji użytkownika o braku możliwości zapisu zmian, gdy niezgodność wersji
+ * [x]  [FRONTEND] Możliwość korzystania z aplikacji offline
+ * [x]  [TESTY] Przetestowanie aplikacji - testy integracyjne
+ * [x]  Kompletna dokumentacja
 
 <a name="technologies"/>
 
