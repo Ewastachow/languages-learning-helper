@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300)
+
+theme_dark = #d6a4a4
+theme_light = #dae2f8
+
+html
+  min-width 865px
+
+body
+  background theme_dark
+  background -webkit-linear-gradient(right, theme_dark, theme_light)
+  background -moz-linear-gradient(right, theme_dark, theme_light)
+  background -o-linear-gradient(right, theme_dark, theme_light)
+  background linear-gradient(to left, theme_dark, theme_light)
+  font-family "Roboto", sans-serif
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+h1, h3, h4
+  color #fff
+  text-align center
+
+nav a
+  color #ffffff
+  text-align center
+  right 0
+
+nav li
+  min-width 100px
+
+button
+  font-family "Roboto", sans-serif
+  text-transform uppercase
+  outline 0
+  background theme_dark
+  border 0
+  border-radius 0
+  padding 15px
+  color #ffffff
+  font-size 14px
+  -webkit-transition all 0.3 ease
+  transition all 0.3 ease
+  cursor pointer
+
+input
+  font-family "Roboto", sans-serif
+  outline 0
+  background #f2f2f2
+  border 0
+  margin 5px
+  padding 15px
+  box-sizing border-box
+  font-size 14px
+
+.login-page
+  padding 10% 0 0
+
+.register-page
+  padding 4% 0 0
+
+.form-container
+  position relative
+  z-index 1
+  background #ffffff
+  max-width: 360px
+  margin 0 auto 100px
+  padding 45px
+  text-align center
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+
+  input
+    margin 0 0 15px
+    width 100%
+
+  button
+    width 100%
+
+  button:hover,
+  button:active,
+  button:focus
+    background theme_light
+
+  .message
+    margin 15px 0 0
+    font-size 12px
+
+    a
+      color theme_dark
+      text-decoration none
+
+  .error-message
+    color #ff0020
+
+  .success-message
+    color #4f8a10
+
+.flashcard-form-page
+  padding 2% 0 0
+
+  .flashcard-form-container
+    position relative
+    z-index 1
+    background #ffffff
+    width: 865px
+    margin 0 auto 100px
+    padding 45px
+    text-align center
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+
+    input
+      width 765px
+
+    button
+      margin 5px
+      height 50px
+
+    .save-btn, .add-btn
+      text-align right
+      margin-right 0
+
+    .flashcardRow
+      display flex
+      width 100%
+
+      input
+        width 350px
+
+.flashcard-sets-grid
+  text-align center
+
+  .tile-container
+    display inline-block
+    position relative
+    margin 50px
+
+    .config
+      display inline-flex
+      position absolute
+      right 0
+      top 0
+
+      span
+        padding 5px
+        font-size 18px
+        color #fff
+        cursor pointer
+
+    a
+      display inline-block
+      color #fff
+      text-decoration none
+
+    .tile
+      display flex
+      box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+      width 200px
+      height 200px
+      justify-content center
+      align-items center
+      background-color #ffb3ba
+
+      p
+        font-size 25px
+
+.flashcard-show
+  text-align center
+  max-width 850px
+  margin auto
+  margin-top 6%
+  font-size 36px
+
+  .left-arrow, .right-arrow
+    display inline-flex
+    width 5%
+    height 400px
+    vertical-align top
+    align-items center
+    justify-content center
+    cursor pointer
+
+  .ReactFlipCard
+    margin 50px
+    text-align center
+
+  .ReactFlipCard,
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back
+    box-sizing: border-box
+    width 600px
+    height 300px
+
+  .ReactFlipCard__Front
+  .ReactFlipCard__Back
+    border-radius 10px
+    border 1px solid #ccc
+    padding 25px
+    background-color #fff
+    display table
+
+    > div
+      display table-cell
+      vertical-align middle
+
+#status
+  position fixed
+  bottom 0
+  color white
+  font-weight bolder
+  background-color theme_dark
+  border-radius 4px
+  margin 5px
+  padding 5px
+
+.modal-container
+  position fixed
+  padding-top 6%
+  top 0
+  left 0
+  right 0
+  z-index 10
+
+  .content
+    position relative
+    z-index 1
+    background #ffffff
+    margin 0 auto 100px
+    padding 20px 20px 85px
+    text-align center
+    height 560px
+    width 860px
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+
+    h2
+      margin-top 5px
+
+    .column
+      float left
+      width 50%
+      padding 1rem
+
+    .button-group
+      position absolute
+      bottom 20px
+      right 20px
+
+      button
+        border-left 2px solid #fff
+        width 145px
+
+    .flashcard-row > div.column
+      padding-top 0
+
+
+.content > div > div.column:nth-child(2)
+  border-left 1px solid #c9c9c9
+
+.content > div > div.column
+  height 450px
+  overflow-y scroll
+
+#cover
+  position fixed
+  top 0
+  left 0
+  background rgba(0,0,0,0.7)
+  z-index 5
+  width 100%
+  height 100%
+
+.input-error
+  background-color theme_dark
+  margin 5px
+  margin-top -5px
+  color #fff
+  padding 2px
+  font-weight 700
+
+.name-error
+  width 765px
+
+.front-back-error
+  width 350px
+
+.search-bar
+  position relative
+  width 50%
+  margin 3rem auto 0
+
+  input
+    width 100%
+    margin 0
+
+  .glyphicon-search
+    position absolute
+    font-size 20px
+    top 15px
+    right 15px
+    z-index 1
+    color #757575
